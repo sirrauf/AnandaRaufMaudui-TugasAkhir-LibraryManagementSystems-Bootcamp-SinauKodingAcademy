@@ -5,6 +5,12 @@ Project: Library Management Systems
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+# Gambar Flochart:
+
+![Flowchart Library Management Systems](https://github.com/sirrauf/TugasAkhir-LibraryManagementSystems-Bootcamp-SinauKodingAcademy/blob/main/Libraray%20Management%20Systems%20Flowchart.png?raw=true)
+
+
 # Apa yang dibutuhkan?:
 
 1. IDE/Text Editor Intellij IDE Community: [Klik untuk kunjungi](https://www.jetbrains.com/idea/download/other.html)
