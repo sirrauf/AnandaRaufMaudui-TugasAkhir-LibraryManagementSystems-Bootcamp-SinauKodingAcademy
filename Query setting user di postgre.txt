@@ -1,0 +1,7 @@
+CREATE USER librarymanagementuser WITH PASSWORD 'library123';
+
+GRANT ALL PRIVILEGES ON DATABASE librarymanagement TO librarymanagementuser;
+
+
+psql -p 5433 -U postgres -d postgres
+

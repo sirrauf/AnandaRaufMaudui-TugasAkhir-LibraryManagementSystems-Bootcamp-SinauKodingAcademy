@@ -1,0 +1,111 @@
+Login terlebih dahulu:
+http://localhost:8080/login
+
+Data untuk Login, mohon di Test Satu-satu:
+1.Username: librarymanagementuser Password: library123
+2.Username: anandaraufm Password: rauf123
+
+Apabila tidak punya akun mohon register akun dulu menggunakan Postman dan Method POST
+
+
+GET: 
+
+Menampilkan buku yang tersedia
+1.http://localhost:8080/api/books/available
+
+Menampilkan Semua Anggota:
+2.http://localhost:8080/api/members
+
+Menampilkan Anggota Berdasarkan ID:
+3.http://localhost:8080/api/members/1
+
+Menampilkan Peminjaman Berdasarkan ID:
+4.http://localhost:8080/api/borrowings/1
+
+Menampilkan Semua Peminjaman:
+5.http://localhost:8080/api/borrowings
+
+Mendapatkan Peminjaman Berdasarkan Anggota:
+6.http://localhost:8080/api/borrowings/member/1
+
+Mendapatkan Peminjaman yang Terlambat
+7.http://localhost:8080/api/borrowings/overdue
+
+POST:
+Membuat Anggota Baru:
+1.http://localhost:8080/api/members
+
+Membuat Peminjaman Baru:
+2.http://localhost:8080/api/borrowings
+
+Untuk login ke sistem:
+
+3.http://localhost:8080/api/auth/login
+
+Untuk Daftar User:
+4.http://localhost:8080/api/auth/register
+
+
+Json Member:
+
+{
+  "name": "Rauf",
+  "email": "anandaraufm@gmail.com",
+  "phone": "6285117041240",
+  "address": "Bogor"
+}
+
+Json Borrowings:
+
+{
+  "bookId": "ID dari Buku",
+  "memberId": "ID dari Anggota"
+}
+
+
+Json Register:
+
+{
+  "username": "anandaraufm",
+  "email": "anandaraufm@mail.com",
+  "password": "rauf123"
+}
+
+Json Login:
+
+{
+  "username": "anandaraufm",
+  "password": "rauf123"
+}
+
+JWT Token:
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5..."
+}
+
+Cara pakai JWT Token: di Postman untuk Authorization (Bearer Token).
+
+
+PUT:
+Memperbarui Anggota:
+
+1.http://localhost:8080/api/members/1
+Mengembalikan Buku:
+2.http://localhost:8080/api/borrowings/1/return
+
+
+
+Json Member:
+
+{
+  "name": "Nama Anggota Baru",
+  "phone": "081122334455"
+}
+
+
+
+
+DELETE:
+Menghapus Anggota:
+1. http://localhost:8080/api/members/1

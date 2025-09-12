@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/librarymanagement
+    username: librarymanagementuser
+    password: rauf123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        enable_lazy_load_no_trans: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  profiles:
+    active: production
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+app:
+  upload-directory: library-uploads
+  folder-temp: ./library-temp/
+
+jwt:
+  secret: yourSuperSecretKeyThatIsAtLeast256BitsLongAndShouldBeRandomlyGenerated
+  expirationMs: 86400000 # 24 hours in milliseconds
+
+logging:
+  level:
+    com.sinaukoding.tugasakhir.tugasakhirbootcamp: TRACE
+    org:
+      springframework:
+        security: DEBUG
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    defaultModelsExpandDepth: -1
+    docExpansion: none
+    tagsSorter: alpha
+    operationsSorter: alpha
