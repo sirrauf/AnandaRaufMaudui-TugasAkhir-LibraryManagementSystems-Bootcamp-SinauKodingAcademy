@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler)) // Handle unauthorized access
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/api/auth/**").permitAll() // ⬅️ Sama seperti configure lama
+                        .requestMatchers("/api/auth/register/**").permitAll() // ⬅️ Sama seperti configure lama
                         .requestMatchers("/api/books/**").hasAnyRole("ADMIN", "LIBRARIAN", "MEMBER")
                         .requestMatchers("/api/members/**").hasAnyRole("ADMIN", "LIBRARIAN")
                         .requestMatchers("/api/borrowings/**").hasAnyRole("ADMIN", "LIBRARIAN")
