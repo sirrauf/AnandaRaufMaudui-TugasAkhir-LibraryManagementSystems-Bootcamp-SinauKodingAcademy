@@ -36,4 +36,4 @@ NOTE PENTING: UNTUK MAVEN MOHON DOWNLOAD YANG BINARY DAN KEMUDIAN DI EKSTRAK KED
 
 # Jangan lupa buat database librarymanagement dan user database library management
 1.[Buka file ini untuk baca](https://raw.githubusercontent.com/sirrauf/TugasAkhir-LibraryManagementSystems-Bootcamp-SinauKodingAcademy/refs/heads/main/Query%20setting%20user%20di%20postgre.txt)
-5.Selesai
+
